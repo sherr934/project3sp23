@@ -7,7 +7,6 @@ body {
 	text-align: right;
 	padding: 20px;
 	letter-spacing: 2px;
-	cursor: url('cursor.png'), auto;
 }
 #ambientNoise {
 	background-color: #262321;
