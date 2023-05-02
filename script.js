@@ -31,7 +31,7 @@ async function logJSONData() {
         div.addEventListener("click", ()=>{
           quaa.play();
         })
-        //only ones with kuks show
+        //only ones with quaas show
         div.classList.add("cinnamon");
         parentSect.append(div)
       }
@@ -40,7 +40,7 @@ async function logJSONData() {
         div.addEventListener("click", ()=>{
           moan.play();
         })
-        //only ones with kuks show
+        //only ones with moans show
         div.classList.add("cinnamon");
         parentSect.append(div)
       }
@@ -63,7 +63,7 @@ async function logJSONData() {
         div.addEventListener("click", ()=>{
           quaa.play();
         })
-      //only ones with kuks show
+      //only ones with quaas show
       div.classList.add("gray");
       parentSect.append(div) 
       }
@@ -72,7 +72,7 @@ async function logJSONData() {
         div.addEventListener("click", ()=>{
           moan.play();
         })
-      //only ones with kuks show
+      //only ones with moans show
       div.classList.add("gray");
       parentSect.append(div) 
       }
@@ -94,7 +94,7 @@ async function logJSONData() {
         div.addEventListener("click", ()=>{
           quaa.play();
         })
-        //only ones with kuks show
+        //only ones with quaas show
         div.classList.add("black");
         parentSect.append(div)      
       }
@@ -102,7 +102,7 @@ async function logJSONData() {
         div.addEventListener("click", ()=>{
           moan.play();
         })
-        //only ones with kuks show
+        //only ones with moans show
         div.classList.add("black");
         parentSect.append(div)      
       }
