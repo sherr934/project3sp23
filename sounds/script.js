@@ -28,12 +28,30 @@ btn.addEventListener('click', function() {
 });
 
 async function logJSONData() {
-  const response = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
+  const response = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json?$limit=3023");
   const jsonData = await response.json();
-  console.log(jsonData);
 
+  let kukCount =0;
+  let quaaCount =0;
+  let moanCount =0;
   for(let i=0; i<jsonData.length; i++){
-    //cinnamon fur
+    //cinnamon fur 
+    if(jsonData[i].kuks===true){
+          console.log("kuk:", kukCount)  
+          kukCount++
+    }
+
+    if(jsonData[i].quaas===true){
+          console.log("quaa:", quaaCount)  
+          quaaCount++
+    }
+
+    if(jsonData[i].moans===true){
+
+          console.log("moans:", moanCount)  
+          moanCount++
+    }
+
     if(jsonData[i].primary_fur_color==="Cinnamon"){
       let div = document.createElement("div");
       if(jsonData[i].kuks===true){
