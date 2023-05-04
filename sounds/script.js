@@ -3,11 +3,29 @@ let kuk = document.querySelector("#kuk")
 let quaa = document.querySelector("#quaa")
 let moan = document.querySelector("#moan")
 
+const btn = document.getElementById('city-sounds-btn');
+const playIcon = document.getElementById('play-icon');
+const pauseIcon = document.getElementById('pause-icon');
+const audio = new Audio('citysounds.mp3');
+
+let isPlaying = false;
+
 let squirrelDOM = "<div>";
 const squirrelData = document.getElementById('parent');
-// const kuks = [
 
-//   ]
+btn.addEventListener('click', function() {
+  isPlaying = !isPlaying;
+  if (isPlaying) {
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'inline-block';
+    audio.play();
+  } else {
+    pauseIcon.style.display = 'none';
+    playIcon.style.display = 'inline-block';
+    audio.pause();
+    audio.currentTime = 0; // Reset audio to beginning
+  }
+});
 
 async function logJSONData() {
   const response = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
@@ -19,7 +37,7 @@ async function logJSONData() {
     if(jsonData[i].primary_fur_color==="Cinnamon"){
       let div = document.createElement("div");
       if(jsonData[i].kuks===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           kuk.play();
         })
         //only ones with kuks show
@@ -28,7 +46,7 @@ async function logJSONData() {
       }
 
       if(jsonData[i].quaas===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           quaa.play();
         })
         //only ones with quaas show
@@ -37,7 +55,7 @@ async function logJSONData() {
       }
       
       if(jsonData[i].moans===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           moan.play();
         })
         //only ones with moans show

@@ -33,7 +33,20 @@ hr {
   z-index: -1;
 }
 
-.home {
+.navbar {
+	background-color: #262321;
+	border: solid 5px #000000;
+	height: 100px;
+	position: sticky;
+	top: 0px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.about {
 	color: #000000;
 	text-decoration: none;
 	padding: 2px 20px 2px 20px;
@@ -42,7 +55,7 @@ hr {
 	border: solid 5px #000000;
 }
 
-.home:hover {
+.about:hover {
 	background-color: black;
 	color: #B0A690;
 }
