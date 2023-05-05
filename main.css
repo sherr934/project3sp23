@@ -8,7 +8,6 @@
 	height: 100vh;
 	z-index: 100;
 	position: fixed;
-	margin: -28px  0 0 -28px;
 	text-align: center;
 }
 
@@ -56,7 +55,9 @@ h1 {
 	background-color: black;
 	color: #B0A690;
 }
-
+* {
+	box-sizing: border-box;
+}
 body {
 	background-color: #B0A690;
 	font-family: "gothiks-round", sans-serif;
@@ -64,8 +65,10 @@ body {
 	font-style: normal;
 	font-size: 24px;
 	text-align: right;
-	padding: 20px;
+/*	padding: 20px;*/
 	letter-spacing: 2px;
+	padding: 0;
+	margin: 0;
 }
 .navbar {
 	background-color: #262321;
@@ -76,11 +79,13 @@ body {
 	width: 100vw;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	text-align: center;
-	margin-left: -30px;
+/*	margin-left: -30px;*/
 	z-index: 99;
-	margin-top: -30px;
+/*	margin-top: -30px;*/
+	padding: 0 40px 0 40px;
+
 }
 
 
@@ -111,6 +116,8 @@ styling for home button if it wasn't a png
 	text-align: right;
 	background-color: #B0A690;
 	border: solid 5px #000000;
+	font-size: 22px;
+	font-weight: 300;
 }
 
 .about:hover {
@@ -118,15 +125,16 @@ styling for home button if it wasn't a png
 	color: #B0A690;
 }
 
-#nature {
+/*#nature {
 	background-color: #B0A690;
 	border: solid 5px #000000;
 	width: 14vw;
 	margin: 10px;
 	display: flex;
 	flex-wrap: wrap;
-}
-.naturesounds {
+}*/
+
+/*.naturesounds {
 	margin: 5px;
 }
 
@@ -137,24 +145,26 @@ styling for home button if it wasn't a png
 	margin: 10px;
 	display: flex;
 	flex-wrap: wrap;
-}
+}*/
 
 #nature-sounds-btn {
   background-color: #B0A690;
   border: solid 5px #000000;
-  padding: 10px;
-  margin: 10px;
-  font-size: 16px;
+  font-size: 22px;
   cursor: pointer;
+  padding: 2px 20px 2px 20px;
+  font-weight: 300;
+  width: 200px;
 }
 
 #city-sounds-btn {
   background-color: #B0A690;
   border: solid 5px #000000;
-  padding: 10px;
-  margin: 10px;
-  font-size: 16px;
+  font-size: 22px;
   cursor: pointer;
+  padding: 2px 20px 2px 20px;
+  font-weight: 300;
+  width: 200px;
 }
 
 #play-icon {
@@ -203,14 +213,21 @@ styling for home button if it wasn't a png
 }*/
 
 #parent {
-	display: grid;
+	/*display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto auto auto;
-	justify-items: center;
-	padding: 10vh 10vw 0 10vw;
+*/	justify-items: center;
+	display: flex;
+	flex-wrap: wrap;
+/*	padding: 10vh 10vw 0 10vw;*/
+	width: 80vw;
+	margin: 0 auto;
 }
 
 #parent div{
-	margin: 2vh;
+	margin: 0.5vw;
+	width: 7vw;
+	height: 7vw;
+	aspect-ratio: 1/1;
 }
 
 /*.dots {
@@ -226,8 +243,8 @@ styling for home button if it wasn't a png
 }
 */
 .cinnamon {
-	height:70px;
-	width: 70px;
+/*	height:70px;
+	width: 70px;*/
 	border-radius: 50%;
 	background-color: #7F3900;
 	border: solid 6px #000000;
@@ -239,8 +256,8 @@ styling for home button if it wasn't a png
 }
 
 .gray {
-	height:70px;
-	width: 70px;
+/*	height:70px;
+	width: 70px;*/
 	border-radius: 50%;
 	background-color: #968D7C;
 	border: solid 6px #000000;
@@ -251,8 +268,8 @@ styling for home button if it wasn't a png
 }
 
 .black {
-	height:70px;
-	width: 70px;
+/*	height:70px;
+	width: 70px;*/
 	border-radius: 50%;
 	background-color: #262321;
 	border: solid 6px #000000;
@@ -262,7 +279,7 @@ styling for home button if it wasn't a png
 	filter: opacity(70%);
 }
 
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
 
 	body {
 		font-size: 18px;
@@ -304,5 +321,5 @@ styling for home button if it wasn't a png
 		margin-top: 500px;
 	}
 
-}
+}*/
 

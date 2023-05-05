@@ -3,10 +3,15 @@ let kuk = document.querySelector("#kuk")
 let quaa = document.querySelector("#quaa")
 let moan = document.querySelector("#moan")
 
-const btn = document.getElementById('city-sounds-btn');
-const playIcon = document.getElementById('play-icon');
-const pauseIcon = document.getElementById('pause-icon');
-const audio = new Audio('citysounds.mp3');
+const cityBtn = document.getElementById('city-sounds-btn');
+const cityPlayIcon = document.getElementById('city-play-icon');
+const cityPauseIcon = document.getElementById('city-pause-icon');
+const cityAudio = new Audio('citysounds.mp3');
+
+const natureBtn = document.getElementById('nature-sounds-btn');
+const naturePlayIcon = document.getElementById('nature-play-icon');
+const naturePauseIcon = document.getElementById('nature-pause-icon');
+const natureAudio = new Audio('naturesounds.mp3');
 
 let isPlaying = false;
 
@@ -24,17 +29,31 @@ const squirrelData = document.getElementById('parent');
 
 
 
-btn.addEventListener('click', function() {
+cityBtn.addEventListener('click', function() {
   isPlaying = !isPlaying;
   if (isPlaying) {
-    playIcon.style.display = 'none';
-    pauseIcon.style.display = 'inline-block';
-    audio.play();
+    cityPlayIcon.style.display = 'none';
+    cityPauseIcon.style.display = 'inline-block';
+    cityAudio.play();
   } else {
-    pauseIcon.style.display = 'none';
-    playIcon.style.display = 'inline-block';
-    audio.pause();
-    audio.currentTime = 0; // Reset audio to beginning
+    cityPauseIcon.style.display = 'none';
+    cityPlayIcon.style.display = 'inline-block';
+    cityAudio.pause();
+    cityAudio.currentTime = 0; // Reset audio to beginning
+  }
+});
+
+natureBtn.addEventListener('click', function() {
+  isPlaying = !isPlaying;
+  if (isPlaying) {
+    naturePlayIcon.style.display = 'none';
+    naturePauseIcon.style.display = 'inline-block';
+    natureAudio.play();
+  } else {
+    naturePauseIcon.style.display = 'none';
+    naturePlayIcon.style.display = 'inline-block';
+    natureAudio.pause();
+    natureAudio.currentTime = 0; // Reset audio to beginning
   }
 });
 
@@ -68,6 +87,7 @@ async function logJSONData() {
       if(jsonData[i].kuks===true){
         div.addEventListener("mouseover", ()=>{
           kuk.play();
+          console.log(kuk,"playing")
         })
         //only ones with kuks show
         div.classList.add("cinnamon");
@@ -77,6 +97,7 @@ async function logJSONData() {
       if(jsonData[i].quaas===true){
         div.addEventListener("mouseover", ()=>{
           quaa.play();
+          console.log(quaa,"playing")
         })
         //only ones with quaas show
         div.classList.add("cinnamon");
@@ -86,6 +107,7 @@ async function logJSONData() {
       if(jsonData[i].moans===true){
         div.addEventListener("mouseover", ()=>{
           moan.play();
+          console.log(moan,"playing")
         })
         //only ones with moans show
         div.classList.add("cinnamon");
@@ -98,7 +120,7 @@ async function logJSONData() {
     if(jsonData[i].primary_fur_color==="Gray"){
       let div = document.createElement("div");
       if(jsonData[i].kuks===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           kuk.play();
         })
       //only ones with kuks show
@@ -107,7 +129,7 @@ async function logJSONData() {
       }
 
       if(jsonData[i].quaas===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           quaa.play();
         })
       //only ones with quaas show
@@ -116,7 +138,7 @@ async function logJSONData() {
       }
 
       if(jsonData[i].moans===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           moan.play();
         })
       //only ones with moans show
@@ -130,7 +152,7 @@ async function logJSONData() {
     if(jsonData[i].primary_fur_color==="Black"){
       let div = document.createElement("div");
       if(jsonData[i].kuks===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           kuk.play();
         })
         //only ones with kuks show
@@ -138,7 +160,7 @@ async function logJSONData() {
         parentSect.append(div)      
       }
       if(jsonData[i].quaas===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           quaa.play();
         })
         //only ones with quaas show
@@ -146,7 +168,7 @@ async function logJSONData() {
         parentSect.append(div)      
       }
       if(jsonData[i].moans===true){
-        div.addEventListener("click", ()=>{
+        div.addEventListener("mouseover", ()=>{
           moan.play();
         })
         //only ones with moans show
