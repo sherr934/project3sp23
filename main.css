@@ -1,11 +1,21 @@
 *{
 	font-family: "gothiks-round", sans-serif;
 	box-sizing: border-box;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+}
+
+body {
+	background-color: #B0A690;
+	font-family: "gothiks-round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
 }
 
 #overlay {
-	background-color: #262321;
+	background-color: #3D251A;
 	width: 100vw;
 	height: 100vh;
 	z-index: 100;
@@ -14,24 +24,24 @@
 }
 
 h1 {
-	font-size: 10vw;
+	font-size: 11vw;
 	font-weight: 400;
 	text-align: center;
 	font-weight: 400;
 	line-height: 90%;
 	-webkit-text-stroke-width: .3vw;
   -webkit-text-stroke-color: #B0A690;
-  color: #262321;
+  color: #3D251A;
 }
 
 .title {
-	font-size: 11vw;
+	font-size: 12vw;
 	font-weight: 400;
 	-webkit-text-stroke-width: 0px;
 	color: #B0A690;
 }
-/* overlay div */
 
+/* overlay div */
 .buttons {
 	margin-top: -40px;
 }
@@ -44,7 +54,7 @@ h1 {
 	border: solid 5px #000000;
 	cursor: pointer;
 	font-size: 30px;
-	font-weight: 300;
+	font-weight: 400;
 	height: 60px;
 	width: 200px;
 	margin: 10px;
@@ -63,7 +73,7 @@ h1 {
 	border: solid 5px #000000;
 	cursor: pointer;
 	font-size: 30px;
-	font-weight: 300;
+	font-weight: 400;
 	height: 60px;
 	width: 200px;
 	margin: 10px;
@@ -74,18 +84,8 @@ h1 {
 	color: #B0A690;
 }
 
-body {
-	background-color: #B0A690;
-	font-family: "gothiks-round", sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 30px;
-	padding: 0;
-	margin: 0;
-}
-
 .navbar {
-	background-color: #262321;
+	background-color: #3D251A;
 	border: solid 5px #000000;
 	height: 100px;
 	position: sticky;
@@ -96,7 +96,7 @@ body {
 	justify-content: space-between;
 	text-align: center;
 	z-index: 99;
-	padding: 0 40px 0 40px;
+	padding: 0 20px;
 }
 
 
@@ -147,9 +147,13 @@ styling for home button if it wasn't a png
   border: solid 5px #000000;
   cursor: pointer;
   padding: 2px 5px 2px 5px;
-  font-weight: 300;
-  width: 200px;
+  width: 220px;
   font-size: 28px;
+}
+
+#nature-sounds-btn:hover {
+	background-color: black;
+	color: #B0A690;
 }
 
 #city-sounds-btn {
@@ -157,9 +161,13 @@ styling for home button if it wasn't a png
   border: solid 5px #000000;
   cursor: pointer;
   padding: 2px 5px 2px 5px;
-  font-weight: 300;
-  width: 200px;
+  width: 220px;
   font-size: 28px;
+}
+
+#city-sounds-btn:hover {
+	background-color: black;
+	color: #B0A690;
 }
 
 #play-icon {
@@ -178,7 +186,7 @@ styling for home button if it wasn't a png
 	background-color: #B0A690;
 	border: solid 5px #000000;
 	font-size: 28px;
-	font-weight: 300;
+	cursor: pointer;
 }
 
 .about:hover {
@@ -269,7 +277,11 @@ styling for home button if it wasn't a png
 	filter: opacity(70%);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
+	* {
+		letter-spacing: 1px;
+	}
+
 	h1 {
 		font-size: 20vw;
 		-webkit-text-stroke-width: .5vw;

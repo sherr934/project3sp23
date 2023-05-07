@@ -22,9 +22,9 @@ h1 {
 	font-weight: 400;
 	line-height: 130px;
 	-webkit-text-stroke-width: .4vw;
-  -webkit-text-stroke-color: #262321;
+  -webkit-text-stroke-color: #000000;
   color: #B0A690;
-  margin-top: 0;
+  margin-top: 40px;
 }
 
 hr {
@@ -40,7 +40,7 @@ hr {
 }
 
 .navbar {
-	background-color: #262321;
+	background-color: #3D251A;
 	border: solid 5px #000000;
 	height: 100px;
 	position: sticky;
@@ -91,6 +91,7 @@ hr {
 	border: solid 5px #000000;
 	font-size: 28px;
 	font-weight: 300;
+	cursor: pointer;
 }
 
 .about:hover {
@@ -100,13 +101,14 @@ hr {
 
 .text {
 	font-family: "pt-sans-narrow", sans-serif;
-	font-size: 16px;
+	font-size: 22px;
 	text-align: left;
 	padding: 2vw 3vw 2vw 3vw;
 	background-color: #B0A690;
 	border: solid 5px #000000;
 	margin-right: 20vw;
 	margin-left: 20vw;
+	margin-top: -40px;
 }
 
 @media (max-width: 800px) {
