@@ -8,6 +8,7 @@
 	<title>Squirrel Sounds</title>
 </head>
 <body>
+
 	<div id="overlay">
 		<h1>What do the 
 		<br>
@@ -16,16 +17,16 @@
 		of NYC say?</h1>
 
 		<div class="buttons">
-			<span id="soundsbtn">sounds</span>
+			<button id="soundsbtn">sounds</button>
 
-			<a href="about/index.html" class="aboutbtn">about</a>
+			<button class="aboutbtn" onclick="window.location.href = 'about/index.html'">about</button>
+		</div>
 	</div>
-	</div>
+
 	<div class=navbar>
+		<a href="index.html"><img src="assets/logo.png" alt="What do the Squirrels of NYC Say?" style="height:60px;"></a>
 
-		<a href="index.html"><img src="assets/logo.png" alt="What do the Squirrels of NYC Say?" style="height:42px;"></a>
-
-	<div class = "buttons">
+	<div class = "soundbtns">
 		<button id="nature-sounds-btn">
 	      <span id="nature-play-icon">&#9658;</span>
 	      <span id="nature-pause-icon" style="display:none;">&#x2759;&#x2759;</span>
@@ -39,7 +40,7 @@
 	    </button>
 	</div>
 
-		<a href="about/index.html" class="about">about</a>
+		<button class="about" onclick="window.location.href = 'about/index.html'">about</button>
 
 	</div>
 	<br>

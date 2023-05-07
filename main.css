@@ -1,5 +1,7 @@
 *{
 	font-family: "gothiks-round", sans-serif;
+	box-sizing: border-box;
+	letter-spacing: 1px;
 }
 
 #overlay {
@@ -28,13 +30,43 @@ h1 {
 	-webkit-text-stroke-width: 0px;
 	color: #B0A690;
 }
+/* overlay div */
+
+.buttons {
+	margin-top: -40px;
+}
+
+#soundsbtn {
+	color: #000000;
+	text-decoration: none;
+	padding: 2px 30px 2px 30px;
+	background-color: #B0A690;
+	border: solid 5px #000000;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 300;
+	height: 60px;
+	width: 200px;
+	margin: 10px;
+}
+
+#soundsbtn:hover {
+	background-color: black;
+	color: #B0A690;
+}
 
 .aboutbtn {
 	color: #000000;
 	text-decoration: none;
-	padding: 2px 20px 2px 20px;
+	padding: 2px 30px 2px 30px;
 	background-color: #B0A690;
 	border: solid 5px #000000;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 300;
+	height: 60px;
+	width: 200px;
+	margin: 10px;
 }
 
 .aboutbtn:hover {
@@ -42,34 +74,16 @@ h1 {
 	color: #B0A690;
 }
 
-#soundsbtn {
-	color: #000000;
-	text-decoration: none;
-	padding: 2px 20px 2px 20px;
-	background-color: #B0A690;
-	border: solid 5px #000000;
-	cursor: pointer;
-}
-
-#soundsbtn:hover {
-	background-color: black;
-	color: #B0A690;
-}
-* {
-	box-sizing: border-box;
-}
 body {
 	background-color: #B0A690;
 	font-family: "gothiks-round", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 24px;
-	text-align: right;
-/*	padding: 20px;*/
-	letter-spacing: 2px;
+	font-size: 30px;
 	padding: 0;
 	margin: 0;
 }
+
 .navbar {
 	background-color: #262321;
 	border: solid 5px #000000;
@@ -81,11 +95,8 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	text-align: center;
-/*	margin-left: -30px;*/
 	z-index: 99;
-/*	margin-top: -30px;*/
 	padding: 0 40px 0 40px;
-
 }
 
 
@@ -108,22 +119,6 @@ styling for home button if it wasn't a png
 	-webkit-text-stroke-width: 0px;
 	color: #B0A690;
 }*/
-
-.about {
-	color: #000000;
-	text-decoration: none;
-	padding: 2px 20px 2px 20px;
-	text-align: right;
-	background-color: #B0A690;
-	border: solid 5px #000000;
-	font-size: 22px;
-	font-weight: 300;
-}
-
-.about:hover {
-	background-color: black;
-	color: #B0A690;
-}
 
 /*#nature {
 	background-color: #B0A690;
@@ -150,21 +145,21 @@ styling for home button if it wasn't a png
 #nature-sounds-btn {
   background-color: #B0A690;
   border: solid 5px #000000;
-  font-size: 22px;
   cursor: pointer;
-  padding: 2px 20px 2px 20px;
+  padding: 2px 5px 2px 5px;
   font-weight: 300;
   width: 200px;
+  font-size: 28px;
 }
 
 #city-sounds-btn {
   background-color: #B0A690;
   border: solid 5px #000000;
-  font-size: 22px;
   cursor: pointer;
-  padding: 2px 20px 2px 20px;
+  padding: 2px 5px 2px 5px;
   font-weight: 300;
   width: 200px;
+  font-size: 28px;
 }
 
 #play-icon {
@@ -173,6 +168,22 @@ styling for home button if it wasn't a png
 
 #pause-icon {
   display: none;
+}
+
+.about {
+	color: #000000;
+	text-decoration: none;
+	padding: 2px 20px 2px 20px;
+	text-align: right;
+	background-color: #B0A690;
+	border: solid 5px #000000;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.about:hover {
+	background-color: black;
+	color: #B0A690;
 }
 
 /*#play-pause-btn {
@@ -213,38 +224,21 @@ styling for home button if it wasn't a png
 }*/
 
 #parent {
-	/*display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto auto auto;
-*/	justify-items: center;
+	justify-items: center;
 	display: flex;
 	flex-wrap: wrap;
-/*	padding: 10vh 10vw 0 10vw;*/
-	width: 80vw;
+	width: 63vw;
 	margin: 0 auto;
 }
 
 #parent div{
 	margin: 0.5vw;
-	width: 7vw;
-	height: 7vw;
+	width: 6vw;
+	height: 6vw;
 	aspect-ratio: 1/1;
 }
 
-/*.dots {
-	height:70px;
-	width: 70px;
-	border-radius: 50%;
-	border: solid 6px #000000;
-	filter: contrast(100%);
-}
-
-.dots:hover {
-	filter: opacity(70%);
-}
-*/
 .cinnamon {
-/*	height:70px;
-	width: 70px;*/
 	border-radius: 50%;
 	background-color: #7F3900;
 	border: solid 6px #000000;
@@ -256,8 +250,6 @@ styling for home button if it wasn't a png
 }
 
 .gray {
-/*	height:70px;
-	width: 70px;*/
 	border-radius: 50%;
 	background-color: #968D7C;
 	border: solid 6px #000000;
@@ -268,8 +260,6 @@ styling for home button if it wasn't a png
 }
 
 .black {
-/*	height:70px;
-	width: 70px;*/
 	border-radius: 50%;
 	background-color: #262321;
 	border: solid 6px #000000;
@@ -279,47 +269,68 @@ styling for home button if it wasn't a png
 	filter: opacity(70%);
 }
 
-/*@media (max-width: 800px) {
+@media (max-width: 800px) {
+	h1 {
+		font-size: 20vw;
+		-webkit-text-stroke-width: .5vw;
+	}
 
-	body {
+	.title {
+		font-size: 21vw;
+	}
+
+	.buttons {
+		margin-top: 40px;
+	}
+
+	.navbar {
+		height: 180px;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 2vh 0;
+	}
+
+	#nature-sounds-btn {
+		width: 40vw;
+		height: 45px;
 		font-size: 18px;
 	}
 
-	h1 {
-	font-size: 16vw;
-	-webkit-text-stroke-width: .5vw;
-	margin-top: 20vh;
-}
-
-	.title {
-	font-size: 17vw;
-}
-
-	#parent {
-		padding: 5px 10px 0 5px;
-		grid-template-columns: auto auto auto auto auto
-	}
-
-	.cinnamon {
-		height:40px;
-		width: 40px;
-	}
-
-	.gray {
-		height:40px;
-		width: 40px;
-	}
-
-	.black {
-		height:40px;
-		width: 40px;
+	#city-sounds-btn {
+		width: 40vw;
+		height: 45px;
+		font-size: 18px;
 	}
 
 	.about {
-		padding: 2px 20px 2px 20px;
-		text-align: right;
-		margin-top: 500px;
+		font-size: 18px;
+		height: 45px;
 	}
 
-}*/
+	#parent {
+		width: 90vw;
+		margin-top: -20px;
+	}
+
+	#parent div{
+	margin: 1.5vw;
+	width: 15vw;
+	height: 15vw;
+	aspect-ratio: 1/1;
+}
+
+	.cinnamon {
+		border: solid 5px;
+	}
+
+	.black {
+		border: solid 5px;
+	}
+
+	.gray {
+		border: solid 5px;
+	}
+
+
+}
 
